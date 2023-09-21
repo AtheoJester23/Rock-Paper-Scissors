@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <title>Rock Paper Scissors</title>
+
+        <link rel="stylesheet" href="CSS/theCSS.css">
+
+    </head>
+
+    <body>
+        <div class = "wholeRPC">
+            <p class = "RPC-title">rock paper scissors 2:</p>
+
+                <button onclick="
+                    RPC('rock');
+
+                " class = "theRPCButton">
+                    <img class = "iconsRPC" src="Icons/rock-emoji.png" alt="">
+                </button>
+
+                <button onclick="
+                    RPC('paper');
+                    
+                "class = "theRPCButton">
+                    <img class = "iconsRPC" src="Icons/paper-emoji.png" alt="">
+                </button>
+
+                <button onclick="
+                    RPC('scissors');
+                    
+                "class = "theRPCButton">
+                    <img class = "iconsRPC" src="Icons/scissors-emoji.png" alt="">
+                </button>
+
+                <p class = "theResult"></p>
+
+                <p class = "chose"></p>
+
+                <p class = "overall"></p>
+            
+                <button onclick="
+                    scores.Wins = 0;
+                    scores.Loses = 0;
+                    scores.Ties = 0;
+                    localStorage.removeItem('scores');
+                    console.log('The Scores have been reset.');
+                    document.querySelector('.overall').innerHTML = `Wins: ${scores.Wins}, Loses: ${scores.Loses}, Ties: ${scores.Ties}`;
+                " class = "resetButton">
+                    Reset Score
+                </button>
+
+                <button onclick = "TheAutoPlay()" class = "autoPlay">Auto Play</button>
+        </div>
+
+        <script src="JS/theJS.js"></script>
+    </body>
+
+</Html>
