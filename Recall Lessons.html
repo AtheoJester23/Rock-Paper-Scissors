@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <title>Recall</title>
+
+        <link rel="stylesheet" href="Recall-Lessons-CSS.css">
+    </head>
+
+    <body>
+        <p style="font-family: Arial, Helvetica, sans-serif; ">YouTube Subscribe Button:</p>
+        <button onclick="
+            sub();
+        "class = "js-subscribe"
+        >Subscribe</button>
+        
+        <hr>
+
+        <div class = "wholeRPC">
+            <p class = "RPC-title">rock paper scissors:</p>
+
+                <button onclick="
+                    RPC('rock');
+
+                " class = "theRPCButton">
+                    <img class = "iconsRPC" src="Icons/rock-emoji.png" alt="">
+                </button>
+
+                <button onclick="
+                    RPC('paper');
+                    
+                "class = "theRPCButton">
+                    <img class = "iconsRPC" src="Icons/paper-emoji.png" alt="">
+                </button>
+
+                <button onclick="
+                    RPC('scissors');
+                    
+                "class = "theRPCButton">
+                    <img class = "iconsRPC" src="Icons/scissors-emoji.png" alt="">
+                </button>
+
+                <button onclick="
+                    scores.Wins = 0;
+                    scores.Loses = 0;
+                    scores.Ties = 0;
+                    localStorage.removeItem('scores');
+                    console.log('The Scores have been reset.');
+                    document.querySelector('.overall').innerHTML = `Wins: ${scores.Wins}, Loses: ${scores.Loses}, Ties: ${scores.Ties}`;
+                ">
+                    Reset
+                </button>
+
+                <p class = "theResult"></p>
+
+                <p class = "chose"></p>
+
+                <p class = "overall"></p>
+            
+        </div>
+
+        <hr>
+
+        <p style="font-family: Arial; font-weight: bold;">Amazon Shipping Calculator</p>
+        
+        <p>Orders under $40 = +$10 shipping.</p>
+
+        <p>Orders over $40 = FREE Shipping.</p>
+
+        <input placeholder="Cost of order" class ="theInput" onkeydown="
+        if (event.key === 'Enter'){
+            cartCalc();
+        }">
+
+        <button onclick="cartCalc();" class ="greenButton">Calculate</button>
+
+        <p class = "price"></p>
+
+        <hr>
+        <h1>Lesson 9 Exercises:</h1>
+        <button onclick="nineA();" class = "button9a">9a</button>
+        <button onclick="nineB()" class = "button9b" style="margin-bottom: 10px;">9b</button>
+        <hr>
+        <br>
+
+        <button class = "theHead" onclick="coin()">Heads</button>
+        <button class = "theTail" onclick="coin2()">Tails</button>
+        <p class = "chosen"></p>
+
+        <hr>
+        <br>
+
+        <input placeholder="Name" class = "Namebox" onkeydown="nameKey();">
+        <button class = "push" onclick="theName();">Submit</button>
+        <p class = "displayName"></p>
+
+        <hr>
+        <input placeholder="Type Something" class = "textBox2" onkeyup="updatelive();">
+        <p class = "liveType"></p>
+        
+        <hr>
+
+        <button class = "showCart" onclick="displayCart()">Show Quantity</button>
+        <button onclick="cartcalculation(1)">Add to Cart</button>
+        <button onclick="cartcalculation(2)">+2</button>
+        <button onclick="cartcalculation(3)">+3</button>
+        <button onclick="cartcalculation(4)">+4</button>
+        <button onclick="cartcalculation(5)">+5</button>
+        <button onclick="cartcalculation(-1)">Remove from cart</button>
+        <button onclick="cartcalculation(-2)">-2</button>
+        <button onclick="cartcalculation(-3)">-3</button>
+        <button onclick="cart = 0; displayCart();">Reset</button>
+        <p class = "cartValue"></p>
+
+        <hr>
+        <h1>Lesson 10 Exercises:</h1>
+
+        <button class = "tenAddCart">Add to Cart</button>
+
+        <button class = "requestNow">Request now</button>
+
+        <button class = "Sched">Schedule for later</button>
+
+        <hr>
+
+        <button class = "js-button" onclick="document.querySelector('.Js-button'); const question = classList.contains('js-button'); console.log(question)">Test</button>
+        
+        <hr>
+
+        <button onclick="gamingButtonStuff('.js-gamingButton')" class = "gamingButton js-gamingButton">Gaming</button>
+        <button onclick="gamingButtonStuff('.js-musicButton')" class = "gamingButton js-musicButton">Music</button>
+        <button onclick="gamingButtonStuff('.js-gamingButton3')" class = "gamingButton js-gamingButton3">Tech</button>
+        <hr>
+        
+        <div class = "Tenj">
+            <p class = "CTitle">Calculator: </p>
+            <p class = "displayNumbers"></p>
+            
+            
+            <button class = "calcButton" onclick="buttonclick(1);">1</button>
+            <button class = "calcButton" onclick="buttonclick(2);">2</button>
+            <button class = "calcButton" onclick="buttonclick(3);">3</button>
+            <button class = "calcButtonOrange" onclick="buttonclick('+')">+</button>
+            <br>
+            <button class = "calcButton" onclick="buttonclick(4);">4</button>
+            <button class = "calcButton" onclick="buttonclick(5);">5</button>
+            <button class = "calcButton" onclick="buttonclick(6);">6</button>
+            <button class = "calcButtonOrange" onclick="buttonclick('-')">-</button>
+            <br>
+            <button class = "calcButton" onclick="buttonclick(7);">7</button>
+            <button class = "calcButton" onclick="buttonclick(8);">8</button>
+            <button class = "calcButton" onclick="buttonclick(9);">9</button>
+            <button class = "calcButtonOrange" onclick="buttonclick('*')">*</button>
+            <br>
+            <button class = "calcButton" onclick="buttonclick(0);">0</button>
+            <button class = "calcButton" onclick="buttonclick('.');">.</button>
+            <button class = "calcButton" onclick="calculatorNumba = eval(calculatorNumba); displayCalculator(); localStorage.setItem('calculatorNumba', calculatorNumba); ">=</button>
+            <button class = "calcButtonOrange" onclick="buttonclick('/');">/</button>
+            <br>
+            <button class = "calcButton clear-btn" onclick="calculatorNumba = ''; displayCalculator();">clear</button>
+        
+
+        </div>
+
+        <hr>
+        <h1 style = "font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Lesson 11:</h1>
+
+        <p>Todo List Practice 1: </p>
+
+        <input type="text" placeholder="Todo name" class = "arrayOne" onkeydown="if(event.key === 'Enter'){
+            addInArray();
+        }">
+        <button class = "arrayAdd" onclick="addInArray();">Add</button>
+        <br>
+        
+
+
+
+
+
+        <p style="margin-top: 50px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Todo List Practice 2: </p>
+
+        <div class = "theThree">
+            <input type="text" placeholder="Todo name" class = "arrayTwo" onkeydown="if(event.key === 'Enter'){
+                addInArray2();
+            }">
+
+            <input type="date" class = "dueDate">
+
+            <button class = "arrayAddtwo" onclick="addInArray2();">Add</button>
+        </div>
+
+        <div class = "toDotwo"></div>
+        
+        <hr>
+        <h1 style = "font-family: Arial, Helvetica, sans-serif; font-weight: bold; ">Lesson 11 Exercises: </h1>
+
+        <p>All are in the JS File</p>
+
+        <hr>
+        
+
+        <h1>Lesson 12:</h1>
+
+        <h2>Turn back in 10:50:00</h2>
+        <script src = "Recall-Lessons-JavaScripts.js"></script>
+    </body>
+</Html>
+

@@ -1,0 +1,191 @@
+.js-subscribe{
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 10px 15px ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.subbed{
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.theInput{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.greenButton{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+.wholeRPC{
+    background-color: rgb(25, 25,25);
+}
+
+.RPC-title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.iconsRPC{
+    height: 50px;
+}
+
+.theRPCButton{
+    border-radius: 60px;
+    height: 120px;
+    width: 120px;
+    background-color: rgb(25, 25,25);
+    border: solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.theResult{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.overall{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.chose{
+    color: white;
+}
+
+/* Lesson 10 Exercises: */
+
+.tenAddCart{
+    background-color: rgb(255, 216, 20);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.requestNow{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Sched{
+    background-color: rgb(230, 230, 230);
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.gamingButton{
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gamingButtontwo{
+    background-color: black;
+    color: white;
+}
+
+.red{
+    color: red;
+}
+
+.Tenj{
+    background-color: black;
+}
+
+.CTitle{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.calcButton{
+    background-color: rgb(51, 51, 51);
+    border: none;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+.calcButtonOrange{
+    background-color: rgb(254, 160, 10);
+    border: none;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.clear-btn{
+    font-size: 17px;
+}
+
+.displayNumbers{
+    color: white;
+    font-size: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.toDotwo,
+.theThree{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.arrayAddtwo{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.arrayTwo{
+    padding: 7px;
+}
