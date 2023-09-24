@@ -38,6 +38,10 @@ function Robot2(){
     } 
 }
 
+document.querySelector('.ChoseRock').addEventListener('click', () => RPC("rock"));
+document.querySelector('.ChosePaper').addEventListener('click', () => RPC("paper"));
+document.querySelector('.ChoseScissors').addEventListener('click', () => RPC("scissors"));
+
 function RPC(yourMove){
     cmove();
     Robot2();
