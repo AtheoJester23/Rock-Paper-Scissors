@@ -107,3 +107,5 @@ function TheAutoPlay(){
     }
 
 }
+
+document.querySelector('.autoPlay').addEventListener('click', () => TheAutoPlay());
