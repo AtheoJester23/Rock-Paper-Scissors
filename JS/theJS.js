@@ -96,16 +96,58 @@ let TheIntervalID;
 
 function TheAutoPlay(){
     if(!autoPlaying){
+        document.querySelector('.autoPlay').innerHTML = 'Stop Playing';
         TheIntervalID = setInterval(() => {
             RPC(AnotherRobotPlayer);
         }, 1000);
         autoPlaying = true;
     }
     else{
+        document.querySelector('.autoPlay').innerHTML = 'Auto Play';
         clearInterval(TheIntervalID);
         autoPlaying = false;
     }
 
 }
 
+document.body.addEventListener('keydown', (event) => {
+    if(event.key === 'a'){
+        TheAutoPlay();
+    }else if(event.key === 'A' ){
+        TheAutoPlay();
+    }else if(event.key === 'q' ){
+        RPC('rock');
+    }else if(event.key === 'Q' ){
+        RPC('rock');
+    }else if(event.key === 'e' ){
+        RPC('scissors');
+    }else if(event.key === 'E' ){
+        RPC('scissors');
+    }else if(event.key === 'w' ){
+        RPC('paper');    
+    }else if(event.key === 'W' ){
+        RPC('paper');    
+    }else if(event.key === 'r' ){
+        Reset();
+    }else if(event.key === 'R' ){
+        Reset();
+    }else if(event.shiftKey === 'A'){
+        TheAutoPlay();
+    } 
+
+});
+
 document.querySelector('.autoPlay').addEventListener('click', () => TheAutoPlay());
+
+function Reset(){
+    scores.Wins = 0;
+    scores.Loses = 0;
+    scores.Ties = 0;
+    localStorage.removeItem('scores');
+    console.log('The Scores have been reset.');
+    document.querySelector('.chose').innerHTML = ``;
+    document.querySelector('.overall').innerHTML = `Wins: ${scores.Wins}, Loses: ${scores.Loses}, Ties: ${scores.Ties}`;
+    document.querySelector('.theResult').innerHTML = ``;
+}
+
+document.querySelector('.resetButton').addEventListener('click',() => Reset());

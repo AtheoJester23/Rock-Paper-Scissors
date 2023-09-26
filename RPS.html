@@ -10,7 +10,20 @@
     <body>
         <div class = "wholeRPC">
             <p class = "RPC-title">Rock Paper Scissors:</p>
+            <p class = "OnePlayer">(One Player)</p>
 
+
+            <div class = "HowTo">
+                <div class = "Instruction">Instruction:</div>
+                <div class = "Description">Press 'Q' or Click The 'Rock Icon' Button to choose rock.</div>
+                <div class = "Description">Press 'W' or Click The 'Paper Icon' Button to choose paper.</div>
+                <div class = "Description">Press 'E' or Click The 'Scissors Icon' Button to choose scissors.</div>
+                <div class = "Description">Press 'A' or Click The 'Auto Play' Button to Auto Play.</div>
+                <div class = "Description">Press 'R' or Click The 'Reset Button' Button to Reset the Scores.</div>
+            </div>
+
+
+            <div class="ButtonContainer">
                 <button class = "theRPCButton ChoseRock">
                     <img class = "iconsRPC" src="Icons/rock-emoji.png" alt="">
                 </button>
@@ -22,6 +35,8 @@
                 <button class = "theRPCButton ChoseScissors">
                     <img class = "iconsRPC" src="Icons/scissors-emoji.png" alt="">
                 </button>
+            </div>
+            
 
                 <p class = "theResult"></p>
 
@@ -29,18 +44,14 @@
 
                 <p class = "overall"></p>
             
-                <button onclick="
-                    scores.Wins = 0;
-                    scores.Loses = 0;
-                    scores.Ties = 0;
-                    localStorage.removeItem('scores');
-                    console.log('The Scores have been reset.');
-                    document.querySelector('.overall').innerHTML = `Wins: ${scores.Wins}, Loses: ${scores.Loses}, Ties: ${scores.Ties}`;
-                " class = "resetButton">
-                    Reset Score
-                </button>
+                <div class = "ResetNAuto">
+                    <button class = "resetButton">
+                        Reset Score
+                    </button>
 
-                <button class = "autoPlay">Auto Play</button>
+                    <button  class = "autoPlay">Auto Play</button>
+                </div>
+                    
         </div>
 
         <script src="JS/theJS.js"></script>
